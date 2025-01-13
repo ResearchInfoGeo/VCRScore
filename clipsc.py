@@ -17,12 +17,11 @@ class clipsc:
         self.model.eval()
         self.tokenizer = open_clip.get_tokenizer('ViT-L-14-336')
 
-    def scoreclip(self,caption,image_file,ref):
+    def scoreclip(self,caption,img,ref):
         
-        img = Image.open(image_file)
         img = self.preprocess(img).unsqueeze(0).to(torch.device("cuda" if torch.cuda.is_available() else "cpu"))
-        #with torch.no_grad():
-        images_features= self.model.encode_image(img).cpu()
+        with torch.no_grad():
+            images_features= self.model.encode_image(img).cpu()
         images_features = torch.tensor(images_features, dtype=torch.float32)
         images_features /= images_features.norm(dim=-1, keepdim=True)
         
@@ -66,5 +65,5 @@ class clipsc:
             r_score.append(torch.maximum(m, torch.zeros_like(m)))
         r_score = torch.stack(r_score)
         score =  1/((1/c_score + 1/r_score)/2)
-        return c_score, score.item()
+        return c_score.item(), score.item()
   

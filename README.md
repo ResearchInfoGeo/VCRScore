@@ -21,3 +21,5 @@ Image captioning has become an essential Vision & Language research task. It is 
 ## Retrieval Optimmized CLIP Models
 
 https://visual-computing.com/files/MCIP/MCIP-ViT-L-14-336.pth
+
+

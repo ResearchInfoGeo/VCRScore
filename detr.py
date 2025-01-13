@@ -29,8 +29,8 @@ class DETR:
 
         
         
-    def detect(self, image_file):
-        im = Image.open(image_file)
+    def detect(self, img):
+        im = img
         width, height = im.size
         if width<333 or height<333:
             newsize = (500, 500)

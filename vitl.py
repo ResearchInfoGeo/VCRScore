@@ -11,8 +11,8 @@ class vitl:
         self.model = ViltForImageAndTextRetrieval.from_pretrained("dandelin/vilt-b32-finetuned-coco")
         self.model.to(device)
     
-    def score_vitl(self, caption, image_file):
-        im = Image.open(image_file)
+    def score_vitl(self, caption, img):
+        im = img
         width, height = im.size
         if width<333 or height<333:
             newsize = (500, 500)

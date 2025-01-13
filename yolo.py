@@ -7,6 +7,8 @@ import numpy as np
 from skimage.io import imread
 from skimage.color import gray2rgb
 from tensorflow.image import resize
+from PIL import Image
+
 class YOLO:
     def __init__(self, file):
         self.model = load_model(file)
@@ -26,17 +28,20 @@ class YOLO:
         return self.labels[idx]
     
 
-    def detect(self, image_file):
-        im=imread(image_file)
-        if len(im.shape) == 2:
-            im = gray2rgb(im)
-        im_h, im_w, _ = im.shape
-        image_or = im
+    def detect(self, im):
+        if im.mode != 'RGB':
+            im = im.convert('RGB')
+
+        im_w, im_h = im.size
+        image_or = np.array(im)
         image_h, image_w, _ = image_or.shape
-        image_r = resize(image_or, (416,416)) / 255
+
+        image_r = im.resize((416, 416))  
+        image_r = np.array(image_r) / 255.0  
 
         img = img_to_array(image_r)
         img = tf.expand_dims(img, 0)
+
         input_w, input_h = 416, 416
         yhat = self.model(img, training=False)
         anchors = [[116,90, 156,198, 373,326], [30,61, 62,45, 59,119], [10,13, 16,30, 33,23]]

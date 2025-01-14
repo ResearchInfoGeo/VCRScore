@@ -43,12 +43,12 @@ from PIL import Image
 import module_VCRScore
 url = "http://images.cocodataset.org/val2017/000000184384.jpg"
 image = Image.open(requests.get(url, stream=True).raw)
-ef = ['a large piece of blueberry cake on a plate',
+ref = ['a large piece of blueberry cake on a plate',
  'a plate of food attractively arranged on a table',
  'a plate of blueberry coffee cake with butter and an orange slice on a table with breakfast foods']
 caption = 'a bluebery cake is on a plate and is topped with butter'
 vcr = module_VCRScore.module_VCRScore()
 value_VCRScore,Clip_Score,score_clip_ref,score_vitl = vcr.VCRScore(ref,caption,image)
-
+```
 
 

@@ -20,8 +20,11 @@ Image captioning has become an essential Vision & Language research task. It is 
 ## More libraries
 
 tensorflow
+
 transformers
+
 torch
+
 pandas
 
 # Download

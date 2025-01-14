@@ -37,7 +37,7 @@ https://visual-computing.com/files/MCIP/MCIP-ViT-L-14-336.pth
 
 # Use our metric (example)
 
-```
+```python
 import requests
 from PIL import Image
 import module_VCRScore

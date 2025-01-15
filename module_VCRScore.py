@@ -35,7 +35,7 @@ class module_VCRScore:
         model_clipsc = clipsc.clipsc()
         sc,score_clipsc = model_clipsc.scoreclip(caption,img,ref)
         
-        model_VCRscore = pickle.load(open('model_GBR_VCR.sav', 'rb'))
+        model_VCRscore = pickle.load(open('model_GBR_VCR.pickle', 'rb'))
         #'recall_own','distancia','clip_ref_score'
         values = np.array([recall_own[0],score_vitl,score_clipsc])
         values = values.reshape(1, -1)

@@ -43,6 +43,8 @@ transformers
 
 ## YOLO weights
 
+https://drive.google.com/file/d/1Tnsgs_JHWfLXIX8hHBq_H-sVZX9Wg_pD/view?usp=sharing
+
 ## Retrieval Optimmized CLIP Models
 
 https://visual-computing.com/files/MCIP/MCIP-ViT-L-14-336.pth

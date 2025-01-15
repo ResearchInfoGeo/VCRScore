@@ -70,8 +70,18 @@ ref = ['a large piece of blueberry cake on a plate',
 caption = 'a bluebery cake is on a plate and is topped with butter'
 vcr = module_VCRScore.module_VCRScore()
 value_VCRScore,Clip_Score,score_clip_ref,score_vitl = vcr.VCRScore(ref,caption,image)
-print("value_VCRScore,Clip_Score,score_clip_ref,score_vitl")
+print(value_VCRScore,Clip_Score,score_clip_ref,score_vitl)
 ```
+# Values of the example
+
+value_VCRScore = 0.7892486441901005 
+
+Clip_Score = 0.5580947995185852 
+
+score_clip_ref = 0.6823944449424744 
+
+score_vitl = 0.44036316871643066
+
 
 # Outputs
 

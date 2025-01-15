@@ -37,7 +37,7 @@ https://visual-computing.com/files/MCIP/MCIP-ViT-L-14-336.pth
 
 ## Files
 
-Load all the *.py modules and the .sav model in a folder
+Load all the *.py modules and the .pickle model in a folder
 
 # Use our metric (example)
 

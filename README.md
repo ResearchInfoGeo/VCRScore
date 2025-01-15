@@ -19,6 +19,8 @@ Image captioning has become an essential Vision & Language research task. It is 
 
 ## More libraries
 
+numpy
+
 open_clip
 
 pandas
@@ -26,6 +28,8 @@ pandas
 pillow
 
 scikit-learn 
+
+struct
 
 tensorflow
 

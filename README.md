@@ -21,15 +21,17 @@ Image captioning has become an essential Vision & Language research task. It is 
 
 open_clip
 
-tensorflow
+pandas
 
-transformers
+pillow
+
+scikit-learn 
+
+tensorflow
 
 torch
 
-pandas
-
-scikit-learn 
+transformers
 
 # Download
 

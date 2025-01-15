@@ -72,6 +72,11 @@ ref = ['a large piece of blueberry cake on a plate',
 caption = 'a bluebery cake is on a plate and is topped with butter'
 vcr = module_VCRScore.module_VCRScore()
 value_VCRScore,Clip_Score,score_clip_ref,score_vitl = vcr.VCRScore(ref,caption,image)
+print("value_VCRScore,Clip_Score,score_clip_ref,score_vitl")
 ```
+
+# Outputs
+
+The first output is the value for our metric proposal; the second output is the value of CLIP as metric; the third is the MCIP as metric; and finally, ViLT as value.
 
 

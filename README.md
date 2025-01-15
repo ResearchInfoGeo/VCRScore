@@ -33,8 +33,6 @@ pillow
 
 scikit-image
 
-scikit-learn 
-
 struct
 
 tensorflow

@@ -13,15 +13,17 @@ Image captioning has become an essential Vision & Language research task. It is 
 
 !pip install -q git+https://github.com/huggingface/transformers.git
 
-## sklearn version 1.3.0
+## sklearn version 1.6.0
 
-!pip install sklearn = 1.3.0
+!pip install sklearn==1.6.0
+
+## open clip version 2.26.1
+
+!pip install open_clip_torch==2.26.1
 
 ## More libraries
 
 numpy
-
-open_clip
 
 pandas
 

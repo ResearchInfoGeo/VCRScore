@@ -15,7 +15,7 @@ Image captioning has become an essential Vision & Language research task. It is 
 
 ## sklearn version 1.6.0
 
-!pip install sklearn==1.6.0
+!pip install scikit-learn==1.6.0
 
 ## open clip version 2.26.1
 

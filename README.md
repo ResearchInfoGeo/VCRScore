@@ -23,6 +23,8 @@ Image captioning has become an essential Vision & Language research task. It is 
 
 ## More libraries
 
+jupyterlab
+
 numpy
 
 pandas
@@ -41,7 +43,6 @@ timm
 
 torch
 
-transformers
 
 # Download
 
